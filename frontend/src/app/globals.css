@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 55, 65, 81; /* gray-700 for text */
+  --background-start-rgb: 254, 253, 251; /* cream-50 */
+  --background-end-rgb: 255, 255, 255; /* white */
+  --primary-rgb: 217, 102, 154; /* primary-500 - soft rose */
+  --secondary-rgb: 232, 124, 107; /* soft-500 - muted coral */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 17, 24, 39; /* gray-900 */
+    --background-end-rgb: 31, 41, 55; /* gray-800 */
+    --primary-rgb: 232, 124, 107; /* soft-500 */
+    --secondary-rgb: 217, 102, 154; /* primary-500 */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    );
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Ensure navbar is always visible */
+header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
+  width: 100% !important;
+}
+
+/* Ensure header container is visible */
+header .container {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+header .flex.items-center.justify-between {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 100% !important;
+}
+
+/* Desktop navigation - ensure it's visible on large screens */
+@media (min-width: 1024px) {
+  .desktop-nav {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .desktop-nav a {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #FFF8DC !important;
+    font-weight: 500 !important;
+    font-size: 0.875rem !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .desktop-nav a:hover {
+    color: #C69F59 !important;
+    transform: scale(1.05) !important;
+  }
+}
+
+/* Force navigation visibility - production override */
+@media (min-width: 1024px) {
+  header .desktop-nav {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  header .desktop-nav a {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #FFF8DC !important;
+    font-weight: 500 !important;
+    font-size: 0.875rem !important;
+    text-decoration: none !important;
+  }
+}
+
+/* Ensure CTA buttons are visible - respect responsive classes */
+.desktop-cta {
+  display: none !important;
+}
+
+.mobile-cta {
+  display: none !important;
+}
+
+@media (min-width: 1024px) {
+  .desktop-cta {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .desktop-cta a,
+  .desktop-cta button {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #123447 !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .mobile-cta {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .mobile-cta a,
+  .mobile-cta button {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #123447 !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+  }
+}
+
+/* Mobile navigation visibility */
+@media (max-width: 1023px) {
+  .mobile-menu {
+    position: relative !important;
+    display: block !important;
+  }
+  
+  .mobile-menu nav {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .mobile-menu nav a {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #FFF8DC !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+  }
+}
+
+/* Mobile dropdown menu fixes */
+@media (max-width: 1023px) {
+  .mobile-menu .absolute {
+    position: fixed !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .mobile-menu nav a {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  .mobile-menu .px-6 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+/* Ensure main content doesn't overlap with fixed header */
+main {
+  padding-top: 0 !important;
+}
+
+/* Add padding to all pages except home */
+.page-content {
+  padding-top: 80px;
+}
+
+/* Navbar blue color class */
+.navbar-blue {
+  color: #123447 !important;
+}
+
+.navbar-blue:hover {
+  color: #C69F59 !important;
+}
+
+/* Mobile-friendly improvements */
+@media (max-width: 1024px) {
+  .page-content {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-content {
+    padding-top: 50px;
+  }
+  
+  /* Ensure text is readable on mobile */
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Better touch targets for mobile */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent horizontal scroll */
+  * {
+    max-width: 100%;
+  }
+}
+
+/* Ensure smooth scrolling on mobile */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Better mobile typography */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.875rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+    line-height: 1.4 !important;
+  }
+}
