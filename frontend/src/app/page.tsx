@@ -38,9 +38,9 @@ export default function Home() {
 
   // Stock photos for slideshow
   const slideshowImages = [
-    "/stock/AdobeStock_1435116140.jpeg",
-    "/stock/AdobeStock_722441630.jpeg", 
-    "/stock/AdobeStock_830145388.jpeg"
+    "/stock/optimized/AdobeStock_1435116140_webp.webp",
+    "/stock/optimized/AdobeStock_722441630_webp.webp", 
+    "/stock/optimized/AdobeStock_830145388_webp.webp"
   ];
 
   // Auto-advance slideshow
@@ -96,37 +96,37 @@ export default function Home() {
       title: "Infusion Center",
       description: "State-of-the-art infusion & injection treatments",
       icon: Syringe,
-      image: "/stock/infusion.jpeg"
+      image: "/stock/optimized/infusion_webp.webp"
     },
     {
       title: "Hematology & Oncology",
       description: "Precision-based cancer care & blood disorders",
       icon: Heart,
-      image: "/stock/oncology.jpeg"
+      image: "/stock/optimized/oncology_webp.webp"
     },
     {
       title: "Genomic Testing",
       description: "Advanced diagnostic & treatment planning",
       icon: Stethoscope,
-      image: "/stock/genomic.jpeg"
+      image: "/stock/optimized/genomic_webp.webp"
     },
     {
       title: "Clinical Trials",
       description: "Access to cutting-edge research treatments",
       icon: Target,
-      image: "/stock/clinical%20research.jpeg"
+      image: "/stock/optimized/clinical%20research_webp.webp"
     },
     {
       title: "In-House Pharmacy",
       description: "Specialized oncology medications on-site",
       icon: Pill,
-      image: "/stock/pharmacy.jpeg"
+      image: "/stock/optimized/pharmacy_webp.webp"
     },
     {
       title: "Multilingual Care",
       description: "English, Spanish, Hindi, Tamil, Gujarati",
       icon: Users,
-      image: "/stock/multilingual.jpeg"
+      image: "/stock/optimized/multilingual_webp.webp"
     }
   ];
 
@@ -512,7 +512,7 @@ export default function Home() {
         <section 
           className="relative py-20 px-4 overflow-hidden"
           style={{
-            backgroundImage: 'url(/stock/brooklyn.jpeg)',
+            backgroundImage: 'url(/stock/optimized/brooklyn_webp.webp)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'

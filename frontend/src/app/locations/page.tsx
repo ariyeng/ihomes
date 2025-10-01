@@ -65,7 +65,7 @@ export default function LocationsPage() {
       <section 
         className="relative py-20 px-4 overflow-hidden"
         style={{
-          backgroundImage: 'url(/stock/AdobeStock_58897104.jpeg)',
+          backgroundImage: 'url(/stock/optimized/AdobeStock_58897104_webp.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'

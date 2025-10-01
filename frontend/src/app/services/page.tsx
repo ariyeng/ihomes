@@ -95,7 +95,7 @@ export default function ServicesPage() {
       <section 
         className="relative py-20 px-4 overflow-hidden"
         style={{
-          backgroundImage: 'url(/stock/AdobeStock_535557088.jpeg)',
+          backgroundImage: 'url(/stock/optimized/AdobeStock_535557088_webp.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'

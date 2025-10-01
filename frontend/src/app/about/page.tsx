@@ -51,7 +51,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-gradient-to-br from-cream-50 to-cream-100 page-content">
       {/* Hero Section */}
       <ResponsiveImage
-        src="/stock/AdobeStock_350407100.jpeg"
+        src="/stock/optimized/AdobeStock_350407100_webp.webp"
         alt="About Iyengar Hematology & Oncology Medical Center"
         className="py-20 px-4"
         priority={true}

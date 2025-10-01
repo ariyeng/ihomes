@@ -54,7 +54,7 @@ export default function ProvidersPage() {
       <section 
         className="relative py-20 px-4 overflow-hidden"
         style={{
-          backgroundImage: 'url(/stock/central_park.jpeg)',
+          backgroundImage: 'url(/stock/optimized/central_park_webp.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
