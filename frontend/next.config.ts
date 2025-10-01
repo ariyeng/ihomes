@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
-  outputFileTracingRoot: "/Users/chrisparvankin/Desktop/kryon-updated/kyron-pilot/frontend",
+  // outputFileTracingRoot: "/Users/chrisparvankin/Desktop/kryon-updated/kyron-pilot/frontend",
   images: {
     remotePatterns: [
       {

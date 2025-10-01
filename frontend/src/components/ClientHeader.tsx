@@ -1,14 +1,11 @@
 "use client";
 
-
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 interface ClientHeaderProps {
-
   navigation: Array<{ name: string; href: string }>;
-  
 }
 
 export default function ClientHeader({ navigation }: ClientHeaderProps) {
